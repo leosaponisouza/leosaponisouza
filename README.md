@@ -4,7 +4,7 @@
 Piracicaba, SP · Brazil
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-leonardosaponi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leonardosaponi)
-[![Java 21 Backend](https://img.shields.io/badge/Featured%20Code-Java%2021%20%2B%20Spring%20Boot%20Backend-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/leosaponisouza/rep-helper/tree/master/backend)
+[![Java 21 Backend](https://img.shields.io/badge/Featured%20Code-Java%2021%20%2B%20Spring%20Boot%20Ecosystem-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/leosaponisouza?tab=repositories)
 
 ---
 
@@ -17,15 +17,13 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
 - Advocate for **Spec-Driven Development (SDD)** and AI-assisted engineering (**Claude Code, MCP servers, automated guardrails**) to elevate architecture quality, predictability, and delivery velocity.
 - B.Sc. in Information Systems — **Federal University of Uberlândia (UFU)** · [Published Thesis (2025)](https://repositorio.ufu.br/handle/123456789/47535).
 
-> *Most of my day-to-day engineering work lives in private corporate repositories; this profile highlights selected public architecture and personal projects.*
+> *Most of my day-to-day engineering work lives in private corporate repositories; the connected public ecosystem below showcases how I design, test, and govern production systems.*
 
 ---
 
-### Flagship Project
+### Featured Engineering Ecosystem
 
-#### [**RepHelper**](https://github.com/leosaponisouza/rep-helper) — Full-Stack Shared Housing Management Monorepo
-
-> Self-hosted platform for managing shared student residences ("repúblicas"), engineered as a unified monorepo with **zero external BaaS lock-in**.
+#### 1. [**RepHelper**](https://github.com/leosaponisouza/rep-helper) — Full-Stack Shared Housing Management Monorepo
 
 [![CI](https://github.com/leosaponisouza/rep-helper/actions/workflows/ci.yml/badge.svg)](https://github.com/leosaponisouza/rep-helper/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/leosaponisouza/rep-helper?style=flat-square&color=2ea44f)](https://github.com/leosaponisouza/rep-helper/releases)
@@ -34,9 +32,8 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
 [![PostgreSQL 16](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/leosaponisouza/rep-helper/blob/master/docs/arquitetura-e-modelagem/schema-postgresql-flyway.md)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/leosaponisouza/rep-helper/blob/master/docker-compose.yml)
 
-- [**Backend (`backend/`)**](https://github.com/leosaponisouza/rep-helper/tree/master/backend): **Java 21 Virtual Threads** (`spring.threads.virtual.enabled=true`) + **Spring Boot 3.4.3** modular monolith, Spring Security 6 stateless JWT with one-time refresh rotation, 2-step OTP password reset, server-side multi-tenant RBAC (`RepublicSecurityService`), `open-in-view=false` + `ddl-auto=validate`, Flyway-managed PostgreSQL 16 schema, magic-byte upload verification, MDC correlation IDs, OpenAPI 3.1, and **27 MockMvc integration tests**.
-- [**Frontend (`frontend/`)**](https://github.com/leosaponisouza/rep-helper/tree/master/frontend): React Native / Expo (iOS, Android & Web) with custom Editorial Design System (light/dark/system themes, WCAG contrast guardrails), recurring chore engine, shared financial ledger (approval → reimbursement → balance audit), events/RSVP calendar, and **125 automated Jest tests**.
-- [**Architecture, Specs & QA (`docs/`)**](https://github.com/leosaponisouza/rep-helper/tree/master/docs): REST API contract, PostgreSQL schema docs, Mermaid state/sequence diagrams, SDD engineering specs (`docs/specs/`), and 22 live E2E browser QA captures (`docs/qa/`).
+- [**Backend (`backend/`)**](https://github.com/leosaponisouza/rep-helper/tree/master/backend): **Java 21 Virtual Threads** + **Spring Boot 3.4.3** modular monolith, Spring Security 6 stateless JWT with refresh-token rotation, 2-step OTP password reset, server-side multi-tenant RBAC (`RepublicSecurityService`), Flyway + PostgreSQL 16, magic-byte upload validation, OpenAPI 3.1, and **27 MockMvc integration tests**.
+- [**Frontend (`frontend/`)**](https://github.com/leosaponisouza/rep-helper/tree/master/frontend): React Native / Expo (iOS, Android & Web) with custom Editorial Design System (light/dark/system themes, WCAG contrast guardrails), recurring chores, shared financial ledger, events/RSVP calendar, and **125 Jest tests**.
 
 <table>
   <tr>
@@ -61,6 +58,14 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
   </tr>
 </table>
 
+#### 2. Focused Java 21 Services & Libraries
+
+| Repository | Focus & Architectural Proof |
+|---|---|
+| [**rep-helper-settlement-engine**](https://github.com/leosaponisouza/rep-helper-settlement-engine)<br/>[![CI](https://github.com/leosaponisouza/rep-helper-settlement-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/leosaponisouza/rep-helper-settlement-engine/actions/workflows/ci.yml) | **Fintech & Concurrency:** Exact-cent *Min-Cash-Flow* debt simplification ($\le N-1$ Pix transfers), concurrent Pix webhook idempotency (`UNIQUE` receipt ledger + JPA `@Version` optimistic locking verified under Virtual Thread storms), **Transactional Outbox**, and Prometheus metrics. |
+| [**exomadb-engine**](https://github.com/leosaponisouza/exomadb-engine)<br/>[![CI](https://github.com/leosaponisouza/exomadb-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/leosaponisouza/exomadb-engine/actions/workflows/ci.yml) | **High-Volume SQL & Streaming:** Clean-room Java 21 evolution of my UFU genomics thesis — bounded-memory VCF v4.2 batch ingestion (`1,000` rows/batch) and **$O(\log N)$ Keyset Pagination** vs. `OFFSET` benchmarked with composite B-Tree indexes and `EXPLAIN` plans. |
+| [**sdd-spring-guardrails**](https://github.com/leosaponisouza/sdd-spring-guardrails)<br/>[![CI](https://github.com/leosaponisouza/sdd-spring-guardrails/actions/workflows/ci.yml/badge.svg)](https://github.com/leosaponisouza/sdd-spring-guardrails/actions/workflows/ci.yml) | **SDD & AI Governance:** Reusable **ArchUnit 1.3 + `@SpecContract`** library enforcing layered boundaries, zero `@Entity` leaks, explicit `OffsetDateTime` contracts, `@Valid` mutations, and Markdown spec traceability — consumed via JitPack by the engines above. |
+
 ---
 
 ### Core Technical Stack
@@ -71,7 +76,7 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
 | **Frameworks & APIs** | Spring Boot 3.x, Spring Data JPA, Spring Security, JWT, Bean Validation, REST APIs, OpenAPI / Swagger, Microservices, SOA, BFF |
 | **Databases & Messaging** | Oracle (PL/SQL, Query Tuning, Execution Plans, Materialized Views, Triggers), PostgreSQL, MySQL, Flyway, Oracle AQ (Outbox Pattern), Kafka, RabbitMQ |
 | **Cloud, DevOps & Obs.** | Docker, Kubernetes, Jenkins, GitLab CI/CD, GitHub Actions, Git, Maven, Spring Actuator, Micrometer, Prometheus |
-| **Quality & AI Engineering** | JUnit 5, Mockito, REST Assured, JaCoCo, Jest, TDD, Spec-Driven Development (SDD), Claude Code, AI Agents, MCP Servers |
+| **Quality & AI Engineering** | JUnit 5, ArchUnit, Mockito, REST Assured, JaCoCo, Jest, TDD, Spec-Driven Development (SDD), Claude Code, AI Agents, MCP Servers |
 
 ---
 
@@ -86,4 +91,4 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
 ### Research & Architectural Retrospective
 
 - [**Incremental Modernization of exomaDB — Undergraduate Thesis (UFU, 2025)**](https://repositorio.ufu.br/handle/123456789/47535): Evolved a pilot module of a live rare-disease genomics platform (**LABGEN/UFU & CAMH** collaboration, **3.88M+ NGS variant annotations**), decoupling a 2,600-LOC legacy *God Class* into a Maven-managed SOLID layered architecture with PostgreSQL server-side pagination and JUnit 5/Mockito unit tests.
-  - *Critical retrospective (what production taught me since):* while pragmatic as a low-risk *Strangler* pilot, the v1 design remained coupled to stateful SSR (`JSF @ViewScoped`), relied on `OFFSET` pagination without `EXPLAIN (ANALYZE, BUFFERS)` index tuning for deep pages, and lacked reproducible `p95`/`p99` benchmarks over isolated containers — trade-offs that directly inform how I design stateless Java 21 and high-volume SQL architectures today.
+  - *Critical retrospective → [**exomadb-engine (v2)**](https://github.com/leosaponisouza/exomadb-engine):* while pragmatic as a low-risk *Strangler* pilot, the v1 design remained coupled to stateful SSR (`JSF @ViewScoped`) and naive `OFFSET` pagination that degrades on deep pages. `exomadb-engine` re-implements those problems from scratch with stateless **Java 21 Virtual Threads**, streaming JDBC batch ingestion, and composite-indexed **Keyset Pagination** verified via automated query plans.
