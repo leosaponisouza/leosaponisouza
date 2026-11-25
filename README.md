@@ -48,9 +48,6 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
     </td>
     <td align="center">
       <a href="https://github.com/leosaponisouza/rep-helper">
-        <img src="https://raw.githubusercontent.com/leosaponisouza/rep-helper">
-      </a>
-      <a href="https://github.com/leosaponisouza/rep-helper">
         <img src="https://raw.githubusercontent.com/leosaponisouza/rep-helper/master/docs/qa/13-financas-saldo-ajustado.png" width="190" alt="RepHelper Financial Ledger" />
       </a><br />
       <sub><b>Financial Ledger</b></sub>
