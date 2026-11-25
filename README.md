@@ -1,9 +1,10 @@
 # Leonardo Saponi de Souza
 
-**Backend Software Engineer** · Java 21 · Spring Boot · Distributed Systems · Oracle & PostgreSQL · Spec-Driven Development & AI Agents
+**Backend Software Engineer** · Java 21 · Spring Boot · Distributed Systems · Oracle & PostgreSQL · Spec-Driven Development & AI Agents  
+Piracicaba, SP · Brazil
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-leonardosaponi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leonardosaponi)
-![Location](https://img.shields.io/badge/Location-Piracicaba%2C%20SP%20%E2%80%A2%20Brazil-24292F?style=flat-square)
+[![Java 21 Backend](https://img.shields.io/badge/Featured%20Code-Java%2021%20%2B%20Spring%20Boot%20Backend-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/leosaponisouza/rep-helper/tree/master/backend)
 
 ---
 
@@ -27,16 +28,15 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
 > Self-hosted platform for managing shared student residences ("repúblicas"), engineered as a unified monorepo with **zero external BaaS lock-in**.
 
 [![CI](https://github.com/leosaponisouza/rep-helper/actions/workflows/ci.yml/badge.svg)](https://github.com/leosaponisouza/rep-helper/actions/workflows/ci.yml)
-![Java 21](https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot 3.4](https://img.shields.io/badge/Spring%20Boot-3.4-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![PostgreSQL 16](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Flyway](https://img.shields.io/badge/Flyway-Migrations-CC0200?style=flat-square)
-![React Native / Expo](https://img.shields.io/badge/Expo-React%20Native-000020?style=flat-square&logo=expo&logoColor=white)
-![Docker Compose](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+[![Release](https://img.shields.io/github/v/release/leosaponisouza/rep-helper?style=flat-square&color=2ea44f)](https://github.com/leosaponisouza/rep-helper/releases)
+[![Java 21](https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/leosaponisouza/rep-helper/tree/master/backend)
+[![Spring Boot 3.4](https://img.shields.io/badge/Spring%20Boot-3.4-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://github.com/leosaponisouza/rep-helper/tree/master/backend)
+[![PostgreSQL 16](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/leosaponisouza/rep-helper/blob/master/docs/arquitetura-e-modelagem/schema-postgresql-flyway.md)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/leosaponisouza/rep-helper/blob/master/docker-compose.yml)
 
-- **Backend (`backend/`)**: Java 21 + Spring Boot 3.4 REST API, Spring Security 6 stateless JWT with refresh-token rotation, 2-step OTP password reset, server-side multi-tenant RBAC (`OWNER` / `ADMIN` / `MEMBER`), per-route rate limiting, Flyway-managed PostgreSQL 16 schema, OpenAPI/Swagger, authenticated local VPS media storage, and **27 MockMvc integration tests** running in GitHub Actions CI.
-- **Frontend (`frontend/`)**: React Native / Expo (iOS, Android & Web) with custom Editorial Design System (light/dark/system themes, WCAG contrast guardrails), recurring chore engine, shared financial ledger (approval → reimbursement → balance audit), events/RSVP calendar, and **125 automated Jest tests**.
-- **Architecture, Specs & QA (`docs/`)**: REST API spec, data model, Mermaid state/sequence diagrams, SDD plans (`docs/specs/`), and 22 verified end-to-end browser QA captures (`docs/qa/`).
+- [**Backend (`backend/`)**](https://github.com/leosaponisouza/rep-helper/tree/master/backend): **Java 21 Virtual Threads** (`spring.threads.virtual.enabled=true`) + **Spring Boot 3.4.3** modular monolith, Spring Security 6 stateless JWT with one-time refresh rotation, 2-step OTP password reset, server-side multi-tenant RBAC (`RepublicSecurityService`), `open-in-view=false` + `ddl-auto=validate`, Flyway-managed PostgreSQL 16 schema, magic-byte upload verification, MDC correlation IDs, OpenAPI 3.1, and **27 MockMvc integration tests**.
+- [**Frontend (`frontend/`)**](https://github.com/leosaponisouza/rep-helper/tree/master/frontend): React Native / Expo (iOS, Android & Web) with custom Editorial Design System (light/dark/system themes, WCAG contrast guardrails), recurring chore engine, shared financial ledger (approval → reimbursement → balance audit), events/RSVP calendar, and **125 automated Jest tests**.
+- [**Architecture, Specs & QA (`docs/`)**](https://github.com/leosaponisouza/rep-helper/tree/master/docs): REST API contract, PostgreSQL schema docs, Mermaid state/sequence diagrams, SDD engineering specs (`docs/specs/`), and 22 live E2E browser QA captures (`docs/qa/`).
 
 <table>
   <tr>
@@ -47,6 +47,9 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
       <sub><b>Home Dashboard</b></sub>
     </td>
     <td align="center">
+      <a href="https://github.com/leosaponisouza/rep-helper">
+        <img src="https://raw.githubusercontent.com/leosaponisouza/rep-helper">
+      </a>
       <a href="https://github.com/leosaponisouza/rep-helper">
         <img src="https://raw.githubusercontent.com/leosaponisouza/rep-helper/master/docs/qa/13-financas-saldo-ajustado.png" width="190" alt="RepHelper Financial Ledger" />
       </a><br />
@@ -67,7 +70,7 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
 
 | Domain | Technologies & Practices |
 |---|---|
-| **Languages & Core** | Java (8 → 21), TypeScript, OOP, Data Structures, SOLID, Clean Code, DDD, 12-Factor App |
+| **Languages & Core** | Java (8 → 21, Virtual Threads), TypeScript, OOP, Data Structures, SOLID, Clean Code, DDD, 12-Factor App |
 | **Frameworks & APIs** | Spring Boot 3.x, Spring Data JPA, Spring Security, JWT, Bean Validation, REST APIs, OpenAPI / Swagger, Microservices, SOA, BFF |
 | **Databases & Messaging** | Oracle (PL/SQL, Query Tuning, Execution Plans, Materialized Views, Triggers), PostgreSQL, MySQL, Flyway, Oracle AQ (Outbox Pattern), Kafka, RabbitMQ |
 | **Cloud, DevOps & Obs.** | Docker, Kubernetes, Jenkins, GitLab CI/CD, GitHub Actions, Git, Maven, Spring Actuator, Micrometer, Prometheus |
