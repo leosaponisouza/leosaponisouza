@@ -15,7 +15,7 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
 - Currently **Backend Software Engineer at NGBilling**, building multi-module **Java 21 / Spring Boot 3.5** microservices, event-driven financial integrations (**Oracle Advanced Queuing / Outbox**, Pix/Boleto banking gateways, Serasa, SAP/TaxOne), and high-throughput Oracle workloads (**>90% latency reduction** on critical billing routines: 10 min → <1 min).
 - Previously **Software Engineer at Algar Telecom** (4 years), developing high-volume credit orchestration, anti-fraud real-time integrations, BFF layers, and Oracle PL/SQL auditing pipelines.
 - Advocate for **Spec-Driven Development (SDD)** and AI-assisted engineering (**Claude Code, MCP servers, automated guardrails**) to elevate architecture quality, predictability, and delivery velocity.
-- B.Sc. in Information Systems — **Federal University of Uberlândia (UFU)**.
+- B.Sc. in Information Systems — **Federal University of Uberlândia (UFU)** · [Published Thesis (2025)](https://repositorio.ufu.br/handle/123456789/47535).
 
 > *Most of my day-to-day engineering work lives in private corporate repositories; this profile highlights selected public architecture and personal projects.*
 
@@ -80,3 +80,10 @@ Backend Software Engineer with **~5 years of experience** designing, optimizing,
 - **Backend Software Engineer — NGBilling** *(Aug 2025 – Present)*: Billing performance optimization (>90% reduction on Oracle batch queries), Java 21 / Spring Boot 3.5 microservices, Outbox messaging (Oracle AQ), financial/ERP integrations, and SDD workflows with AI agents.
 - **Software Engineer (Full-Stack / Backend Java) — Algar Telecom** *(Aug 2022 – Aug 2025)*: Mission-critical credit analysis services (1.2M+ customers), real-time anti-fraud & bureau integrations, BFF layers, and Oracle PL/SQL audit routines.
 - **Software Engineering Intern — Algar Telecom** *(Aug 2021 – Aug 2022)*: Enterprise Java CRM evolution, incident resolution, and CI/CD build/deploy automation.
+
+---
+
+### Research & Architectural Retrospective
+
+- [**Incremental Modernization of exomaDB — Undergraduate Thesis (UFU, 2025)**](https://repositorio.ufu.br/handle/123456789/47535): Evolved a pilot module of a live rare-disease genomics platform (**LABGEN/UFU & CAMH** collaboration, **3.88M+ NGS variant annotations**), decoupling a 2,600-LOC legacy *God Class* into a Maven-managed SOLID layered architecture with PostgreSQL server-side pagination and JUnit 5/Mockito unit tests.
+  - *Critical retrospective (what production taught me since):* while pragmatic as a low-risk *Strangler* pilot, the v1 design remained coupled to stateful SSR (`JSF @ViewScoped`), relied on `OFFSET` pagination without `EXPLAIN (ANALYZE, BUFFERS)` index tuning for deep pages, and lacked reproducible `p95`/`p99` benchmarks over isolated containers — trade-offs that directly inform how I design stateless Java 21 and high-volume SQL architectures today.
